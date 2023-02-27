@@ -339,14 +339,12 @@ footer .divider {
 
 
     #exampleSection{
-        width: 310px;
+        width: 340px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        gap: 32px;
-        margin: 32px;
     }
 
     #exampleSection2 img {
