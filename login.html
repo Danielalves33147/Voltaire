@@ -1,29 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<<<<<<< HEAD
 <head>
-    <link rel="stylesheet" href="./src/css/stylelogin.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Login</title>
-=======
-    <head>
     <link rel="stylesheet" href="/src/css/stylelogin.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>Voltaire - Login</title>
-    <style>
-        #iconColor{
-            color: black;
-        }
-    </style>
->>>>>>> 22339c25e5910b20ff0afba45c3ffcf056aa7848
+    <title>Login</title>
 </head>
 <body>
     <div class="main-login">
@@ -33,18 +15,19 @@
         </div>
         <div class="right-login">
             <div class="card-login">
-                <h1>Faça login!</h1>
+                <h1>LOGIN</h1>
                 <form>
-                    <div class="textfield">
-                        <label for="usuario">Usuário</label>
-                        <input type="text" placeholder="Usuario" id="login">
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" placeholder="Usuario" id="login">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" placeholder="Senha" id="senha">
+                </div>
+                    <div class="btn">
+                            <input type="submit" value="LOGIN" onclick="logar(); return false">
                     </div>
-                    <div class="textfield">
-                        <label for="senha">Senha</label>
-                        <input type="password" placeholder="Senha" id="senha">
-                    </div>
-                        <button class="btn" type="submit" onclick="logar()">Fazer login</button>
-                        
                 </form>
             </div>
         </div>
@@ -55,34 +38,39 @@
             var login = document.getElementById('login').value;
             var senha = document.getElementById('senha').value;
 
-            if(login == "admin" &&  senha == "admin"){  
+            if(login == "" | senha == ""){
                 Swal.fire({
-                    text: 'Login Efetuado',
-                    title: 'Seja bem vindo ao Voltaire!',
-                    icon: 'success',
+                    text: 'Acesso Negado',
+                    title: 'Preencha todos os Campos',
+                    icon: 'warning',
                     background: 'black',
-<<<<<<< HEAD
-                    iconColor: 'blue'
-                })
-                .then((result) => {
-                    location.href="index.html";
-                })
-=======
                     textColor: 'white',
                     iconColor: 'blue'
                 })
->>>>>>> 22339c25e5910b20ff0afba45c3ffcf056aa7848
-            }else{
-                Swal.fire({
-                    text: 'Acesso Negado',
-                    title: 'Usuario ou Senha incorretos!',
-                    icon: 'error',
-                    background: 'black',
-                    iconColor: 'blue'
-                })
-                
+            }else if(login == "admin" &&  senha == "admin"){  
+                    Swal.fire({
+                        text: 'Login Efetuado',
+                        title: 'Seja bem vindo ao Voltaire!',
+                        icon: 'success',
+                        background: 'black',
+                        textColor: 'white',
+                        iconColor: 'blue'
+                    })
+                    .then(() => {
+                        location.href="index.html";
+                    })
+                }else{
+                    Swal.fire({
+                        text: 'Acesso Negado',
+                        title: 'Usuario ou Senha incorretos!',
+                        icon: 'error',
+                        background: 'black',
+                        iconColor: 'blue'
+                    })
+                    
+                }
             }
-        }
+        
     </script>
 </body>
 </html>
