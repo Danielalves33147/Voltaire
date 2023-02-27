@@ -70,7 +70,6 @@ header {
 #containerContent{
     display: flex;
     justify-content: center;
-    text-align: center;
 }
 
 /* Example Container */
