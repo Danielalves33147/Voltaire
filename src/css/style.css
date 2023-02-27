@@ -175,20 +175,14 @@ header {
 }
 
 #textContainer p {
-<<<<<<< HEAD
     display: flex;
-=======
->>>>>>> 22339c25e5910b20ff0afba45c3ffcf056aa7848
     border: 1px solid #0077B6;
     border-radius: 6px;
     padding: 16px;
     width: 80%;
     margin: 32px;
     user-select: none;
-<<<<<<< HEAD
     
-=======
->>>>>>> 22339c25e5910b20ff0afba45c3ffcf056aa7848
 }
 
 #submitAnswer {
@@ -339,16 +333,13 @@ footer .divider {
         box-shadow: 0px 8px 21px rgba(0, 119, 182, 0.15);
     
     }
-<<<<<<< HEAD
     .direita{
         width: 100%;
     }
 
-=======
->>>>>>> 22339c25e5910b20ff0afba45c3ffcf056aa7848
 
     #exampleSection{
-        width: 300px;
+        width: 310px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -375,7 +366,6 @@ footer .divider {
 
     #submitAnswer input::placeholder {
         font-size: 12px;
-<<<<<<< HEAD
     }
 
     #textContainer p {
@@ -386,7 +376,5 @@ footer .divider {
         margin: 32px;
         user-select: none;
         
-=======
->>>>>>> 22339c25e5910b20ff0afba45c3ffcf056aa7848
     }
 }
