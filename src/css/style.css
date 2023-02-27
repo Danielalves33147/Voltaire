@@ -348,7 +348,8 @@ footer .divider {
     }
 
     #exampleSection2 img {
-        margin-left: 40px;
+        margin: 32px;
+        width: 350px;
     }
 
     #interactButtons{
