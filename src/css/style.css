@@ -1,0 +1,392 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    color: #F4F4F4;
+}
+
+*::selection {
+    background: #90E0EF;
+    color: #040404;
+}
+
+body {
+    background: #040404;
+}
+
+/* Header */
+header h1 {
+    color: #0077B6;
+    font-size: 24px;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+
+    border-bottom: 1px solid #0077B6;
+}
+
+.tudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+/* Main content container */
+#mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 48px 0;
+    font-size: 16px;
+}
+
+#mainContent h1 {
+    font-size: 40px;
+    margin: 48px 16px;
+}
+
+#mainContent p {
+    width: 720px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #0077B6;
+    border-radius: 6px;
+    padding: 32px;
+    margin: 0 32px;
+    box-shadow: 0px 8px 21px rgba(0, 119, 182, 0.15);
+}
+
+#containerContent{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Example Container */
+#exampleSection {
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:start;
+    gap: 32px;
+    margin: 32px;
+}
+
+#exampleSection h2 {
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: start;
+}
+
+#exampleSection2 img {
+    width: 300px;
+    margin: 32px;
+}
+
+/* Buttons container */
+#interactButtons {
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#interactButtons a {
+    text-decoration: none;
+
+}
+
+/* Start practice button */
+#startPractice {
+    font-weight: 700;
+    width: 320px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 16px;
+    color: #0077B6;
+    background-color: #f4f4f4;
+    border: 1px solid #0077B6;
+    transition: all .2s;
+}
+
+/* See eBooks button */
+#seeBooks {
+    width: 320px;
+    text-align: center;
+    border: 1px solid #0077B6;
+    padding: 16px;
+    border-radius: 6px;
+    color: #0077B6;
+
+    transition: all .2s;
+}
+
+#seeBooks:hover {
+    border: 1px solid #F4F4F4;
+    color: #F4F4F4;
+}
+
+/* Social Buttons */
+#socialButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 48px 0;
+}
+
+#socialButtons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 24px;
+    padding: 24px;
+    border-radius: 6px;
+    transition: all .2s;
+    box-shadow: 0px 8px 21px rgba(0, 119, 182, 0.15);
+}
+
+#socialButtons a:hover {
+    background: #F4F4F4;
+}
+
+/* Practice text */
+#textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textContainer p {
+<<<<<<< HEAD
+    display: flex;
+=======
+>>>>>>> 22339c25e5910b20ff0afba45c3ffcf056aa7848
+    border: 1px solid #0077B6;
+    border-radius: 6px;
+    padding: 16px;
+    width: 80%;
+    margin: 32px;
+    user-select: none;
+<<<<<<< HEAD
+    
+=======
+>>>>>>> 22339c25e5910b20ff0afba45c3ffcf056aa7848
+}
+
+#submitAnswer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#submitAnswer input {
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid #0077B6;
+    color: #F4F4F4;
+    background-color: transparent;
+}
+
+
+
+#textButtons {
+    display: inline-flex;
+    gap: 16px;
+}
+
+.sendAnswer {
+    padding: 16px;
+    color: #040404;
+    background: #90E0EF;
+    border: 1px solid ;
+    border-radius: 6px;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.changeText {
+    padding: 16px;
+    color: #f4f4f4;
+    background: transparent;
+    border: 1px solid #0077B6;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.changeText:hover {
+    box-shadow: 0px 8px 21px rgba(0, 119, 182, 0.15);
+}
+
+/* Footer */
+.divider {
+    height: 72px;
+    border: 1px solid #F4F4F4;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 48px 32px;
+
+    border-top: 1px solid #0077B6;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    height: 128px;
+    margin: 96px 0;
+    text-align: center;
+}
+
+footer p span {
+    font-weight: 700;
+}
+
+footer .divider {
+    display: none;
+}
+
+/* Timer */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 42px;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 48px;
+    padding: 32px;
+    border: 1px solid #0077B6;
+    border-radius: 6px;
+    box-shadow: 0px 8px 21px rgba(0, 119, 182, 0.15);
+
+}
+
+.timerButton {
+    width: 120px;
+    background-color: transparent;
+    border: 1px solid #0077B6;
+    border-radius: 6px;
+    padding: 16px;
+    color: #0077B6;
+    font-weight: 700;
+
+    transition: all .2s;
+}
+
+.timerButton:hover {
+    cursor: pointer;
+    background-color: #F4F4F4;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1090px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tudo{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    #mainContent h1 {
+        font-size: 20px;
+        margin: 48px 16px;
+    }
+
+    #mainContent p {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    
+        border: 1px solid #0077B6;
+        border-radius: 6px;
+        padding: 24px;
+        margin: 0px 32px;
+    
+        box-shadow: 0px 8px 21px rgba(0, 119, 182, 0.15);
+    
+    }
+<<<<<<< HEAD
+    .direita{
+        width: 100%;
+    }
+
+=======
+>>>>>>> 22339c25e5910b20ff0afba45c3ffcf056aa7848
+
+    #exampleSection{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 32px;
+        margin: 32px;
+    }
+
+    #exampleSection2 img {
+        margin-left: 40px;
+    }
+
+    #interactButtons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #textContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #submitAnswer input::placeholder {
+        font-size: 12px;
+<<<<<<< HEAD
+    }
+
+    #textContainer p {
+        border: 1px solid #0077B6;
+        border-radius: 6px;
+        padding: 16px;
+        width: 80%;
+        margin: 32px;
+        user-select: none;
+        
+=======
+>>>>>>> 22339c25e5910b20ff0afba45c3ffcf056aa7848
+    }
+}
